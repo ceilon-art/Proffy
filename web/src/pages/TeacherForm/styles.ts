@@ -93,13 +93,13 @@ export const Footer = styled.div `
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
 `;
 
 export const FooterButton = styled.button `
-        width: 50%;
-        margin-left: 22.5rem;
+        width: 20.4rem;
+        margin-left: 10.5rem;
         height: 5.6rem;
         background-color: var(--color-secondary);
         color: var(--color-button-text);
@@ -120,9 +120,7 @@ export const FooterButton = styled.button `
             background-color:  var(--color-secondary-dark);
         }
 
-        @media(max-width: 700px) {
-            width: 20rem;
-            margin-top: 1.2rem;
-            margin-right: 7.2rem;
+        @media(min-width: 860px) {
+            margin-left: 36rem;
         }
 `;

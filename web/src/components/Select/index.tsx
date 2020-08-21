@@ -5,15 +5,16 @@ import { Container } from './styles';
 interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement>  {
     name: string;
     label: string;
+    className?: string;
     options: Array<{
         value: string;
         label: string;
     }>;
 }
 
-const Select: React.FC<SelectProps> = ({ label, name, options, ...rest }) => {
+const Select: React.FC<SelectProps> = ({ label, name, options, className, ...rest }) => {
     return (
-        <Container>
+        <Container className={className}>
             <label htmlFor={name}>{label}</label>
             <select value="" id={name} {...rest}>
                 <option value="" disabled hidden>

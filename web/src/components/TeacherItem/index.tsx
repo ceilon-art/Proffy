@@ -55,7 +55,7 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
                     </a>
                 </footer>
             </article>
-    )
+        )
 };
 
 export default TeacherItem;

@@ -80,6 +80,7 @@ const TeacherForm: React.FC = () => {
                             name='name' 
                             label='Nome completo' 
                             value={name} 
+                            className='teacherForm'
                             onChange={(e) => {
                                 setName(e.target.value)
                             }} 
@@ -88,6 +89,7 @@ const TeacherForm: React.FC = () => {
                             name='avatar' 
                             label='Avatar' 
                             value={avatar}
+                            className='teacherForm'
                             onChange={(e) => {
                                 setAvatar(e.target.value)
                             }}     
@@ -96,6 +98,7 @@ const TeacherForm: React.FC = () => {
                             name='whatsapp' 
                             label='WhatsApp' 
                             value={whatsapp} 
+                            className='teacherForm'
                             onChange={(e) => {
                                 setWhatsapp(e.target.value)
                             }}   
@@ -104,6 +107,7 @@ const TeacherForm: React.FC = () => {
                             name='bio' 
                             label='Biografia' 
                             value={bio}
+                            className='teacherForm'
                             onChange={(e) => {
                                 setBio(e.target.value)
                             }} 
@@ -117,6 +121,7 @@ const TeacherForm: React.FC = () => {
                             name='subject' 
                             label='Matéria'
                             value={subject}
+                            className='teacherForm'
                             onChange={(e) => {
                                 setSubject(e.target.value)
                             }} 
@@ -136,6 +141,7 @@ const TeacherForm: React.FC = () => {
                             name='cost' 
                             label='Custo da sua hora por aula' 
                             value={cost}
+                            className='teacherForm'
                             onChange={(e) => {
                                 setCost(e.target.value)
                             }}     
@@ -157,6 +163,7 @@ const TeacherForm: React.FC = () => {
                                         name='week_day' 
                                         label='Dia da semana'
                                         value={scheduleItem.week_day}
+                                        className='teacherForm'
                                         onChange={e => setScheduleItemValue(index, 'week_day', e.target.value)}
                                         options={[
                                             { value: '0', label: 'Domingo' },
@@ -172,6 +179,7 @@ const TeacherForm: React.FC = () => {
                                         name="from" 
                                         label="Das" 
                                         value={scheduleItem.from}
+                                        className='teacherForm'
                                         type="time" 
                                         onChange={e => setScheduleItemValue(index, 'from', e.target.value)}
                                     />
@@ -179,6 +187,7 @@ const TeacherForm: React.FC = () => {
                                         name="to" 
                                         label="Até" 
                                         value={scheduleItem.to}
+                                        className='teacherForm'
                                         type="time" 
                                         onChange={e => setScheduleItemValue(index, 'to', e.target.value)}    
                                     />

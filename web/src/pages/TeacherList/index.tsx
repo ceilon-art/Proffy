@@ -38,6 +38,7 @@ const TeacherList: React.FC = () => {
                         name='subject' 
                         label='Matéria'
                         value={subject}
+                        className="teacherList"
                         onChange={(e) => {
                             setSubject(e.target.value)
                         }}
@@ -57,6 +58,7 @@ const TeacherList: React.FC = () => {
                         name='week_day' 
                         label='Dia da semana'
                         value={week_day}
+                        className="teacherList"
                         onChange={(e) => {
                             setWeekDay(e.target.value)
                         }}
@@ -74,6 +76,7 @@ const TeacherList: React.FC = () => {
                         name='time' 
                         label='Hora' 
                         value={time}
+                        className="teacherList"
                         onChange={(e) => {
                             setTime(e.target.value)
                         }}    

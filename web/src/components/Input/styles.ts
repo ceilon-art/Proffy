@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div `
-    position: relative;
-
+    margin-top: 11.8rem;
+    margin-left: -1rem;
+    
     label {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     input {
-        width: 100%;
-        margin-top: 5.8rem;
+        width: 90%;
         height: 5.6rem;
         border-radius: 0.8rem;
         background: var(--color-input-background);
@@ -17,5 +17,18 @@ export const Container = styled.div `
         outline: 0;
         padding: 0 1.6rem;
         font: 1.6rem Archivo;
+        margin-top: 1.2rem;
+    }
+
+    &.teacherForm {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    &.teacherList {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15.2rem;
     }
 `;

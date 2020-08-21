@@ -11,13 +11,13 @@ export const Container = styled.div `
 
 export const Formulary = styled.div `
     margin-top: 3.2rem;
+    position: absolute;
 
     @media(min-width: 700px) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 16px;
-        position: absolute;
-        bottom: -98px;
+        bottom: -58px;
     }
 
     label {
@@ -26,9 +26,8 @@ export const Formulary = styled.div `
 
     button {
         position: relative;
-        width: 100%;
+        width: 80%;
         height: 5.6rem;
-        /* margin-top: 30.6rem; */
         background-color: var(--color-secondary);
         color: var(--color-button-text);
         border: 0;
@@ -42,7 +41,8 @@ export const Formulary = styled.div `
 
         text-decoration: none;
         transition: background-color 0.2s;
-        margin-top: 8.2rem;
+        margin-top: 18rem;
+        margin-right: 8rem;
 
         &:hover {
             background-color: var(--color-secondary-dark);
@@ -60,35 +60,3 @@ export const Main = styled.div `
         margin: 0 auto;
     }
 `;
-
-// #search-teachers {
-//     
-// }
-
-    // #search-teachers 
-
-// #search-teachers 
-
-// #search-teachers button:hover {
-//     
-// }
-
-// #page-teacher-list main {
-    
-// }
-
-// @media (min-width: 700px) {
-
-//     #search-teachers {
-        
-//     }
-
-//     #search-teachers .input-block + .input-block,
-//     #search-teachers .select-block + .select-block {
-//         margin-top: 0;
-//     }
-
-//     #page-teacher-list main {
-
-//     }
-// }

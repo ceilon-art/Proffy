@@ -4,6 +4,7 @@ export const Container = styled.div `
     display: flex;
     flex-direction: column;
     background-color: var(--color-primary);
+    position: relative;
 `;
 
 export const TopBar = styled.div `
@@ -32,12 +33,13 @@ export const TopBar = styled.div `
 export const Content = styled.div `
     width: 90%;
     margin: 0 auto;
-    position: relative;
     margin: 2rem auto;
+    margin-bottom: 4rem;
+
 
     strong {
         font: 700 3rem Archivo;
-        line-height: 4.2rem;
+        line-height: 7.2rem;
         color: var(--color-title-in-primary);
     }
 
