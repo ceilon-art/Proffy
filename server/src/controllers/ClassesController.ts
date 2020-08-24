@@ -18,11 +18,11 @@ export default class ClassesController {
         const week_day = filters.week_day as string;
         const time = filters.time as string;
 
-        if(!filters.wekk_day || filters.subject || filters.time) {
-            return response.status(400).json({
-                error: 'Missing filters search classes'
-            });
-        }
+        // if(!filters.week_day || filters.subject || filters.time) {
+        //     return response.status(400).json({
+        //         error: 'Missing filters search classes'
+        //     });
+        // }
 
         const timeInMinutes = convertHourToMinutes(time);
 
@@ -63,7 +63,7 @@ export default class ClassesController {
                 bio,
             });
         
-            const user_id = insertedUsersIds[0];
+            const user_id = insertedUsersIds;
         
             const insertedClassesIds = await trx('classes').insert({
                 subject,
@@ -71,7 +71,11 @@ export default class ClassesController {
                 user_id,
             });
         
-            const class_id = insertedClassesIds[0];
+            const class_id = insertedClassesIds;
+
+            const connections = await trx('connections').insert({
+                user_id,
+            })
         
             const classSchedule = schedule.map((scheduleItem: ScheduleItem) => {
                 return {
@@ -86,7 +90,7 @@ export default class ClassesController {
         
             await trx.commit();
         
-            return response.status(201).send();
+            return response.status(201).json('Class created with successful');
         } catch (err) {
             await trx.rollback();
     
