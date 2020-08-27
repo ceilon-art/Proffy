@@ -33,7 +33,7 @@ const TeacherList: React.FC = () => {
     return (
         <Container>
             <PageHeader title="Estes são os proffys disponíveis.">
-                <Formulary id="search-teachers" onSubmit={searchTeachers}>
+                <Formulary id="search-teachers" onClick={searchTeachers}>
                     <Select 
                         name='subject' 
                         label='Matéria'
